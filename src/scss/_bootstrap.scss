@@ -1,0 +1,35 @@
+* { 
+  border: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  color: $dark-green;
+  font-family: 'Open Sans', sans-serif;
+
+  ul { 
+    list-style: none;
+
+    li {
+      list-style: none;
+    }
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  button {
+    background: none;
+    border: 0;
+    box-sizing: content-box;
+    color: inherit;
+    outline: none;
+    padding: 0;
+  }
+}

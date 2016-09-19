@@ -1,0 +1,138 @@
+#team {
+  align-items: flex-start;
+  background-color: $pure-white;
+  display: flex;
+  justify-content: center;
+  min-height: 50%;
+  width: 100%;
+
+  @media (max-width: 1023px) {
+    box-sizing: border-box;
+    display: block;
+    padding: 0 20px;
+  }
+
+  .content {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 68px;
+    max-width: 860px;
+    min-height: 100%;
+
+    @media (max-width: 1023px) {
+      display: block;
+      margin-top: 48px;
+      min-width: 100%;
+    }
+
+    .row {
+      max-width: 420px;
+      width: 420px;
+
+      @media (max-width: 1023px) {
+        min-width: 100%;
+      }
+
+      &:first-child {
+        margin-right: 20px;
+
+        @media (max-width: 1023px) {
+          margin-right: 0;
+        }
+      }
+
+      .name {
+        border-top: 1px solid rgba($dark-green, 0.3);
+        color: $green;
+        font-size: 20px;
+        padding-top: 12px;
+        position: relative;
+
+        &:before {
+          background-color: $green;
+          content: '';
+          display: block;
+          height: 6px;
+          left: 0;
+          position: absolute;
+          top: -1px;
+          width: 142px;
+        }
+      }
+
+      .category,
+      .job-role {
+        font-size: 14px;
+      }
+
+      .job-role {
+        margin-bottom: 40px;
+
+        @media (max-width: 1023px) {
+          margin-bottom: 0;
+        }
+      }
+
+      .contact {
+        border-top: 1px solid rgba($dark-green, 0.3);
+        font-size: 14px;
+        padding-top: 12px;
+
+        @media (max-width: 1023px) {
+          border: none;
+          font-size: 12px;
+          margin-bottom: 30px;
+        }
+
+        .phone,
+        .email {
+          .icon {
+            color: $green;
+            font-size: 12px;
+            font-weight: bold;
+            text-transform: uppercase;
+
+            &:before {
+              background-position: center center;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              content: '';
+              display: inline-block;
+              height: 14px;
+              margin-bottom: -2px;
+              margin-right: 7px;
+              width: 14px;
+            }
+          }
+        }
+
+        .phone {
+          .icon {
+            margin-right: 22px;
+
+            &:before {
+              background-image: url($path-img + 'icon-phone.png');
+            }
+          }
+        }
+
+        .email {
+          .icon {
+            margin-right: 6px;
+
+            &:before {
+              background-image: url($path-img + 'icon-email.png');
+            }
+          }
+
+          a {
+            &:hover {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
+  }
+}

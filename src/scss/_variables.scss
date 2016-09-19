@@ -1,0 +1,21 @@
+$path-img: "../../assets/images/";
+$path-fonts: "../../assets/fonts/";
+
+$pure-black: #000;
+$pure-white: #FFF;
+
+$black: #3d3d2b;
+$dark-green: #8a8c88;
+$green: #77b751;
+
+$easeOutQuart: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+@function responsive($value1, $value2, $width1: 320, $width2: 1920) {
+  $x1: $width1;
+  $x2: $width2;
+  $y1: $value1;
+  $y2: $value2;
+  $a: ($y2 - $y1) / ($x2 - $x1);
+  $b: ($x2 * $y1 - $x1 * $y2) / ($x2 - $x1);
+  @return calc(#{$a * 100vw} + #{$b * 1px});
+}
