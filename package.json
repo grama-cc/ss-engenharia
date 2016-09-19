@@ -1,0 +1,35 @@
+{
+  "name": "ss-engenharia",
+  "version": "1.0.0",
+  "description": "Siciliano & Silva Engenharia",
+  "main": "index.html",
+  "scripts": {
+    "build": "node ./node_modules/gulp/bin/gulp.js",
+    "watch": "node ./node_modules/gulp/bin/gulp.js watch",
+    "production": "node ./node_modules/gulp/bin/gulp.js production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grama-cc/ss-engenharia.git"
+  },
+  "author": "Grama",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/grama-cc/ss-engenharia/issues"
+  },
+  "homepage": "https://github.com/grama-cc/ss-engenharia#readme",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^2.0.11",
+    "gulp-concat": "^2.6.0",
+    "gulp-if": "^2.0.1",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4"
+  },
+  "dependencies": {
+    "jquery": "^3.0.0"
+  }
+}
